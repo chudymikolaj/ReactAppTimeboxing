@@ -2,16 +2,6 @@ import React from 'react';
 import uuid from 'uuid';
 import Clock from './Clock';
 
-
-function PageTitle() {
-  return (
-    <>
-      <h1>Kurs React.js Tydzień 2</h1>
-      <hr />
-    </>
-  );
-}
-
 function ProgressBar({ className = "", percent }) {
   return (
     <div className={`ProgressBar ${className}`}>
@@ -324,4 +314,4 @@ class EditableTimeBox extends React.Component {
   }
 }
 
-export { EditableTimeBox, TimeBoxList, PageTitle };
+export { EditableTimeBox, TimeBoxList };

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { PageTitle, TimeBoxList, EditableTimeBox } from './remainning-components';
+import PageTitle from './PageTitle';
+import { TimeBoxList, EditableTimeBox } from './remainning-components';
 
 function App() {
   return (
