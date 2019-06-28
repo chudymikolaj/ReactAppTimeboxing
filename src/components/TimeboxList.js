@@ -1,6 +1,6 @@
 import React from 'react';
 import TimeBoxCreator from './TimeboxCreator';
-import TimeBox from './TimeBox';
+import TimeBox from './Timebox';
 
 class TimeBoxList extends React.Component {
   state = {
@@ -29,7 +29,7 @@ class TimeBoxList extends React.Component {
   removeTimebox = indexToRemove => {
     this.setState(prevState => {
       const timeboxes = prevState.timeboxes.filter(
-        timebox => timebox.id != indexToRemove
+        timebox => timebox.id !== indexToRemove
       );
       return { timeboxes };
     });
