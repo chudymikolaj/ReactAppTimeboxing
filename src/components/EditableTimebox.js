@@ -1,4 +1,5 @@
 import React from 'react';
+import TimeBoxEditor from './TimeboxEditor';
 
 class EditableTimeBox extends React.Component {
   state = {
