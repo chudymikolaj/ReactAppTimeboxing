@@ -2,7 +2,7 @@ import React from 'react';
 
 import PageTitle from './PageTitle';
 import EditableTimeBox from './EditableTimebox';
-import { TimeBoxList } from './remainning-components';
+import TimeBoxList from './TimeboxList';
 
 function App() {
   return (
