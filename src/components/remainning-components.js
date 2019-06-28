@@ -1,14 +1,6 @@
 import React from 'react';
 import uuid from 'uuid';
 
-function ProgressBar({ className = "", percent }) {
-  return (
-    <div className={`ProgressBar ${className}`}>
-      <div className="Bar" style={{ width: `${percent}%` }} />
-    </div>
-  );
-}
-
 class TimeBoxCreator extends React.Component {
   constructor(props) {
     super(props);
