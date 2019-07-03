@@ -2,8 +2,8 @@ import React from 'react';
 
 function ProgressBar({ className = "", percent }) {
   return (
-    <div className={`ProgressBar ${className}`}>
-      <div className="Bar" style={{ width: `${percent}%` }} />
+    <div className={`progress progress--big progress--color-red ${className}`}>
+      <div className="progress__bar" style={{ width: `${percent}%` }} />
     </div>
   );
 }

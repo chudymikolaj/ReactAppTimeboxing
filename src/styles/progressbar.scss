@@ -1,16 +1,28 @@
-.ProgressBar {
-  border: 1px solid orangered;
+.progress {
+  border: 1px solid black;
   border-radius: 5px;
   height: 25px;
   margin-bottom: 20px;
   padding: 5px;
   text-align: right;
-}
 
-.Bar {
-  content: " ";
-  height: 100%;
-  max-width: 100%;
-  background-color: orangered;
-  display: inline-block;
+  &__bar {
+    content: " ";
+    height: 100%;
+    max-width: 100%;
+    background-color: black;
+    display: inline-block;
+  }
+
+  &--big {
+    height: 50px;
+  }
+
+  &--color-red {
+    border-color: orangered;
+  }
+
+  &--color-red &__bar {
+    background-color: orangered;
+  }
 }
