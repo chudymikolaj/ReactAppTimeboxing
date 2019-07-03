@@ -1,0 +1,32 @@
+.Timebox {
+  background-color: lightblue;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.TimerBoxEditor,
+.TimeboxCreator {
+  text-align: right;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.TimerBoxEditor {
+  background-color: aqua;
+}
+
+.TimeboxCreator {
+  background-color: tomato;
+}
+
+.CurrentTimebox {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  background-color: aquamarine;
+}
