@@ -23,7 +23,7 @@ class TimeBoxCreator extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} class="TimeboxCreator">
+      <form onSubmit={this.handleSubmit} className="TimeboxCreator">
         <label>
           Co Robisz?
           <input type="text" ref={this.titleInput} />

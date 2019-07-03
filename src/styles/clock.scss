@@ -1,3 +1,15 @@
-.Clock {
+.clock {
   color: orangered;
+
+  &--color-green {
+    color: green;
+  }
+
+  &--color-greenyellow {
+    color: darken( greenyellow, 50);
+  }
+
+  &--color-grey {
+    color: grey;
+  }
 }

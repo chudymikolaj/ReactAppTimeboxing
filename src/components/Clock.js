@@ -36,9 +36,7 @@ function Clock({ className = "", time }) {
   const hours = formatLimitHours(runTime);
 
   return (
-    <h2 className={`Clock ${className}`}>
-      {`Pozostało ${hours}:${minutes}:${seconds}:${miliSeconds}`}
-    </h2>
+    <h2 className={`clock ${className}`} dangerouslySetInnerHTML={{__html: `Pozostało <span class="clock--color-green">${hours}</span>:<span class="clock--color-greenyellow">${minutes}</span>:<span class="clock--color-grey">${seconds}</span>:<span class="clock--color-grey">${miliSeconds}</span>`}}></h2>
   );
 }
 

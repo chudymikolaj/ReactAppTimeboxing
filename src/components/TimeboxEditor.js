@@ -12,7 +12,7 @@ function TimeBoxEditor(props) {
   } = props;
 
   return (
-    <div class={`TimerBoxEditor ${isEditable ? "" : "inactive"} `}>
+    <div className={`TimerBoxEditor ${isEditable ? "" : "inactive"} `}>
       <label>
         Co Robisz?
         <input
