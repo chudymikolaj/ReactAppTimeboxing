@@ -85,6 +85,8 @@ class CurrentTimebox extends React.Component {
         <ProgressBar
           percent={progressBarInSeconds}
           className={isPaused ? "inactive" : ""}
+          color="green"
+          big
         />
         <button onClick={onEdit} disabled={isEditable}>
           Edytuj
