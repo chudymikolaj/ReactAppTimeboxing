@@ -35,7 +35,7 @@ class TimeBoxCreator extends React.Component {
           <br />
           <br />
         </label>
-        <button>Dodajt imeBox</button>
+        <button>Dodaj Zadanie</button>
       </form>
     );
   }
