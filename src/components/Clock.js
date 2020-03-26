@@ -1,4 +1,5 @@
 import React from 'react';
+import RealTimeClock from './RealTimeClock';
 
 function Clock({ className = "", time }) {
   const printZero = (val, placesCount) => {
@@ -35,9 +36,17 @@ function Clock({ className = "", time }) {
   const minutes = formatLimitMinuts(runTime);
   const hours = formatLimitHours(runTime);
 
+  
   return (
-    <h2 className={`clock ${className}`} dangerouslySetInnerHTML={{__html: `Pozostało <span class="clock--color-green">${hours}</span>:<span class="clock--color-greenyellow">${minutes}</span>:<span class="clock--color-grey">${seconds}</span>:<span class="clock--color-grey">${miliSeconds}</span>`}}></h2>
+    <React.Fragment>
+      <h2 
+      className={`clock ${className}`} 
+      dangerouslySetInnerHTML={{__html: `Pozostało <span class="clock--color-green">${hours}</span>:<span class="clock--color-greenyellow">${minutes}</span>:<span class="clock--color-grey">${seconds}</span>:<span class="clock--color-grey">${miliSeconds}</span>`}}></h2>
+  
+      <RealTimeClock />
+    </React.Fragment>
   );
+  
 }
 
 export default Clock;
